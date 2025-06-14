@@ -13,12 +13,12 @@ bot = Bot(token=os.getenv("TOKEN"))
 dp = Dispatcher()
 
 dp.include_router(start_functions_router)
-
 async def on_startup():
-    print("_______men turdum bro________ ")
+
+    print("_______МЕН ИШТЕДИМ РОДНОЙ________ ")
 
 async def on_shutdown():
-    print("________men uktadum bro_________ ")
+    print("________МЕН ИШТЕГЕН ЖОКМУН РОДНОЙ_________ ")
 
 async def main():
     dp.startup.register(on_startup)
